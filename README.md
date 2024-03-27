@@ -19,5 +19,3 @@ Es kann ein neuer Schauplatz hinzugefügt werden, indem relevante Informationen 
 ## Exportfunktion:
 
 Die Liste aller Schauplätze, die auf Webseite 2 angezeigt wird, kann in eine XML- oder JSON-Datei exportiert werden.
-
-Dieses README-Dokument soll eine Übersicht über die verschiedenen Funktionen und Komponenten des Projekts bieten und den Benutzern einen schnellen Einstieg in die Verwendung des Systems ermöglichen. Je nach Bedarf können weitere Details oder Anleitungen hinzugefügt werden.
