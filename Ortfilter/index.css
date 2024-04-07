@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
 :root {
     --primary-color: #3f51b5; 
     --secondary-color: #795548; 
@@ -8,57 +14,65 @@
     --secondary-color: #8d6e63; 
 }
 
-body {
+/* body {
     background-color: #a3e2a3;
 }
 body.dark-mode {
     background-color: #556b2f;
-}
+} */
 
-#logo {
+#content {
     width: 100%;
-    height: 40vh;
+    min-height: 100vh;
+    padding: 5%;
+    background-image: linear-gradient(rgba(0, 8, 51, 0.9), rgba(0, 8, 51, 0.9)), url('https://cdn.pixabay.com/photo/2016/10/20/18/35/earth-1756274_1280.jpg');
+    background-position: center;
+    background-size: cover;
     display: flex;
+    align-items: center;
     justify-content: center;
-    animation: scaleIn 0.5s ease-in-out forwards, fadeIn 0.5s ease-in-out forwards; 
-}
-
-#logo img {
-    width: auto;
-    height: 100%;
+    overflow: hidden; 
 }
 
 #searchbar {
-    padding-top: 3vh;
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    animation: scaleIn 0.5s ease-in-out forwards, fadeIn 0.5s ease-in-out forwards; 
+    border-radius: 60px; 
+    backdrop-filter: blur(10px);
 }
 
 #searchbar input {
-    width: 50%;
-    height: 5vh;
-    border: thin solid var(--primary-color);
-    border-radius: 20px;
-    padding: 0 10px;
-    font-size: 1.5em;
-    transition: border-color 0.3s ease-in-out; 
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 2em;
+    color: #dddcff;
 }
 
-#searchbar button {
-    height: 5vh;
+::placeholder {
+    color: #dddcff
+}
+
+#searchbar button{
     border: none;
-    border-radius: 20px; 
-    padding: 0 10px;
-    font-size: 1.5em;
-    background-color: var(--primary-color);
-    color: #fff;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; 
+    border-radius: 50%; 
+    background: #58629b;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+#searchbar button img {
+    width: 25px;
 }
 
 #searchbar button:hover {
-    background-color: #fff;
     color: var(--primary-color);
     cursor: pointer;
     border: thin solid var(--primary-color);
