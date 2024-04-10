@@ -1,8 +1,10 @@
- 
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
+
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box
+   
 }
 
 :root {
@@ -25,6 +27,7 @@
     background-size: cover;
     display: flex;
     overflow: hidden; 
+    font-family: 'Merriweather Sans', arial, verdana;
 }
 
  
@@ -42,6 +45,7 @@
 	overflow: hidden;
 	border-radius: 5px;
 	counter-reset: flag; 
+
 }
 
 .breadcrumb a {

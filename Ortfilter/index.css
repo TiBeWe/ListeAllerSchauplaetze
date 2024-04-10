@@ -32,6 +32,7 @@ body.dark-mode {
     align-items: center;
     justify-content: center;
     overflow: hidden; 
+    font-family: 'Merriweather Sans', arial, verdana;
 }
 
 #searchbar {
