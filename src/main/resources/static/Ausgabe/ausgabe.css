@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+   
+}
+
+:root {
+    --primary-color: #3f51b5; 
+    --secondary-color: #795548; 
+}
+
+.dark-mode {
+    --primary-color: #1976d2; 
+    --secondary-color: #8d6e63; 
+}
+
+
+#container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-image: linear-gradient(rgba(0, 8, 51, 0.9), rgba(0, 8, 51, 0.9)), url('https://cdn.pixabay.com/photo/2016/10/20/18/35/earth-1756274_1280.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    overflow: hidden; 
+    font-family: 'Merriweather Sans', arial, verdana;
+}
+
+ 
+
+.flat a, .flat a:after {
+	background: #333333;
+	color:#eee;
+	transition: all 0.7s;
+}
+
+.breadcrumb {
+	display: inline-block;
+  text-align: center;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);
+	overflow: hidden;
+	border-radius: 5px;
+	counter-reset: flag; 
+
+}
+
+.breadcrumb a {
+	text-decoration: none;
+	outline: none;
+	display: block;
+	float: left;
+	font-size: 12px;
+	line-height: 36px;
+	color: white;
+	padding: 0 10px 0 60px;
+	background: #333;
+	background: linear-gradient(#333, #111);
+	position: relative;
+}
+
+.breadcrumb a:first-child {
+	padding-left: 46px;
+	border-radius: 5px 0 0 5px; 
+}
+.breadcrumb a:first-child:before {
+	left: 14px;
+}
+.breadcrumb a:last-child {
+	border-radius: 0 5px 5px 0; 
+	padding-right: 20px;
+}
+
+.breadcrumb a.active, .breadcrumb a:hover{
+	background: #111;
+	background: linear-gradient(#333, #111);
+}
+.breadcrumb a.active:after, .breadcrumb a:hover:after {
+	background: #222;
+	background: linear-gradient(145deg, #333, #222);
+}
+
+.breadcrumb a:after {
+	content: '';
+	position: absolute;
+	top: 0; 
+	right: -18px; 
+	width: 36px; 
+	height: 36px;
+	transform: scale(0.707) rotate(45deg);
+	z-index: 1;
+	background: #555;
+	background: linear-gradient(135deg, #777, #333);
+	box-shadow: 
+		2px -2px 0 2px rgba(0, 0, 0, 0.4), 
+		3px -3px 0 2px rgba(255, 255, 255, 0.1);
+
+	border-radius: 0 5px 0 50px;
+}
+
+.breadcrumb a:last-child:after {
+	content: none;
+}
+
+.breadcrumb a:before {
+	content: counter(flag);
+	counter-increment: flag;
+	border-radius: 100%;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	margin: 8px 0;
+	position: absolute;
+	top: 0;
+	left: 30px;
+	background: #333;
+	background: linear-gradient(#333, #300);
+	font-weight: bold;
+}
+
+
+.flat a, .flat a:after {
+	background: #333333;
+	color:#eee;
+	transition: all 0.7s;
+}
+.flat a:before {
+	background: #111;
+	box-shadow: 0 0 0 1px #00c;
+}
+.flat a:hover, .flat a.active, 
+.flat a:hover:after, .flat a.active:after{
+	background: #3b5998;
+}

@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+:root {
+    --primary-color: #3f51b5; 
+    --secondary-color: #795548; 
+}
+
+.dark-mode {
+    --primary-color: #1976d2; 
+    --secondary-color: #8d6e63; 
+}
+
+/* body {
+    background-color: #a3e2a3;
+}
+body.dark-mode {
+    background-color: #556b2f;
+} */
+
+#content {
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-image: linear-gradient(rgba(0, 8, 51, 0.9), rgba(0, 8, 51, 0.9)), url('https://cdn.pixabay.com/photo/2016/10/20/18/35/earth-1756274_1280.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+    font-family: 'Merriweather Sans', arial, verdana;
+}
+
+#searchbar {
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 60px; 
+    backdrop-filter: blur(10px);
+}
+
+#searchbar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 2em;
+    color: #dddcff;
+}
+
+::placeholder {
+    color: #dddcff
+}
+
+#searchbar button{
+    border: none;
+    border-radius: 50%; 
+    background: #58629b;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+#searchbar button img {
+    width: 25px;
+}
+
+#searchbar button:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+    border: thin solid var(--primary-color);
+}
+
+.dark-mode #searchbar input {
+    border-color: var(--secondary-color);
+}
+
+.dark-mode #searchbar button {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.dark-mode #searchbar button:hover {
+    background-color: #fff;
+    color: var(--secondary-color);
+}
