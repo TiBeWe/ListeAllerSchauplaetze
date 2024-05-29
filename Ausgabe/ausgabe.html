@@ -16,8 +16,35 @@
                 <a href="../Ausgabe/ausgabe.html">AUSGABE</a>
             </div>
         </header>
-        <h1>Schauplatz</h1> 
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const ort = urlParams.get('ort');
+            document.getElementById('ort-name').textContent = ort;
+
+            const schauplaetze = [
+                { id: 1, name: "Schauplatz 1", ort: "Ort1" },
+                { id: 2, name: "Schauplatz 2", ort: "Ort1" },
+                { id: 3, name: "Schauplatz 3", ort: "Ort2" },
+                { id: 4, name: "Schauplatz 4", ort: "Ort3" }
+                // Weitere Schauplätze hier hinzufügen
+            ];
+
+            const filteredSchauplaetze = schauplaetze.filter(s => s.ort.toLowerCase().includes(ort.toLowerCase()));
+
+            const listElement = document.getElementById('schauplaetze-list');
+            filteredSchauplaetze.forEach(schauplatz => {
+                const listItem = document.createElement('li');
+                const link = document.createElement('a');
+                link.href = `vorstellungen.html?id=${schauplatz.id}`;
+                link.textContent = schauplatz.name;
+                listItem.appendChild(link);
+                listElement.appendChild(listItem);
+            });
+        });
+    </script>
 
 </body>
 

@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 :root {
@@ -13,13 +13,6 @@
     --primary-color: #1976d2; 
     --secondary-color: #8d6e63; 
 }
-
-/* body {
-    background-color: #a3e2a3;
-}
-body.dark-mode {
-    background-color: #556b2f;
-} */
 
 #content {
     width: 100%;
@@ -57,7 +50,7 @@ body.dark-mode {
 }
 
 ::placeholder {
-    color: #dddcff
+    color: #dddcff;
 }
 
 #searchbar button{
