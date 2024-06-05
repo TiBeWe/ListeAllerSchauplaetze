@@ -1,4 +1,4 @@
-package ch.bbw.jpa.ListeAllerSchauplaetze.Services;
+package ch.bbw.jpa.ListeAllerSchauplaetze;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;

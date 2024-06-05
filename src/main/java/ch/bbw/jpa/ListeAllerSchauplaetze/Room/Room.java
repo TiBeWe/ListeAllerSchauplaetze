@@ -1,4 +1,4 @@
-package ch.bbw.jpa.ListeAllerSchauplaetze;
+package ch.bbw.jpa.ListeAllerSchauplaetze.Room;
 
 
 import jakarta.persistence.*;

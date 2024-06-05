@@ -1,6 +1,6 @@
-package ch.bbw.jpa.ListeAllerSchauplaetze.Controller;
+package ch.bbw.jpa.ListeAllerSchauplaetze;
 
-import ch.bbw.jpa.ListeAllerSchauplaetze.Services.GenericService;
+import ch.bbw.jpa.ListeAllerSchauplaetze.GenericService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
