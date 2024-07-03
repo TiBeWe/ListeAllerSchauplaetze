@@ -4,6 +4,11 @@ import ch.bbw.jpa.ListeAllerSchauplaetze.Film.Film;
 import ch.bbw.jpa.ListeAllerSchauplaetze.GenericService;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class RoomService extends GenericService<Film, Integer> {
+
+
+
 }
